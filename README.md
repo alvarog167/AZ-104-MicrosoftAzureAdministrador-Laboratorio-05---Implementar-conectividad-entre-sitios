@@ -64,7 +64,7 @@ Vas a crear la VM de servicios centrales.
 
 - **Grupo de recursos:** az104-rg5 
 - **Nombre de la mañana virtual:** CoreServicesVM
-- **Región:** La que te permita tu subcirpcion 
+- **Región:** La que te permita tu subcirpcion (Spain Central)
 - **Opțiuni de disponibilidad:** No se requiere redundancia de infraestructura 
 - **Tipo de seguridad:** Estándar 
 - **Imagen:** Centro de datos de Windows Server 2025: x64 Gen2 
@@ -339,3 +339,87 @@ Ahora vas a comprobar que la conectividad funciona después del peering.
 Test-NetConnection <IP_PRIVADA> -Port 3389
 
 <img width="1648" height="1220" alt="image" src="https://github.com/user-attachments/assets/9a18a570-d85b-4e6b-a417-51354a49bc1d" />
+
+---
+
+## 🔹 Tarea 6: Crear una ruta personalizada
+
+En esta tarea vas a crear una **tabla de rutas personalizada** y asociarla a una subred.
+
+---
+
+### 🌐 Paso 1: Crear una nueva subred
+
+1. Ve a **CoreServicesVnet**  
+2. Entra en **Subredes**  
+3. Pulsa en **+ Subred**
+
+<img width="1628" height="760" alt="image" src="https://github.com/user-attachments/assets/25579f04-c746-4a72-8408-7c57d5eb79fb" />
+
+Configura:
+
+- **Nombre:** perimeter  
+- **Direcion inicial:** 10.0.1.0/24  
+
+<img width="865" height="1170" alt="image" src="https://github.com/user-attachments/assets/bf34b767-ad38-4030-a1cf-dacfca0ef009" />
+
+---
+
+### 🛣️ Paso 2: Crear tabla de rutas
+
+1. Busca **Tablas de Ruta** en el portal de Azure  
+2. Pulsa en **Crear**
+
+Configura:
+
+- **Name:** rt-CoreServices  
+- **Grupo de recursos:** az104-rg5  
+- **Region:** Spain Cental  
+- **Propagar rutas de puertas de enlace:** No  
+
+Pulsa **Revisar y crear -> Crear**
+
+<img width="785" height="1216" alt="image" src="https://github.com/user-attachments/assets/a651de39-629d-45c7-a348-8af1f8951ac6" />
+
+---
+
+### ➕ Paso 3: Añadir ruta
+
+1. Entra en **rt-CoreServices**  
+2. Ve a **Rutas**  
+3. Pulsa en **+ Agregar**
+
+Configura:
+
+- **Nombre de Ruta:** PerimetertoCore  
+- **Tipo de Destino:** IP Addresses  
+- **Intervalos de direcciones IP de destino y CIDR:** 10.0.0.0/16  
+- **tipo del proximo salto:** Dispositivo Virtual  
+- **Direcion del proximo slato:** 10.0.1.7  
+
+Pulsa **Agregar**
+
+<img width="1072" height="1153" alt="image" src="https://github.com/user-attachments/assets/5cd937da-1862-482c-acba-48844e6adad9" />
+
+---
+
+### 🔗 Paso 4: Asociar la tabla de rutas a la subred
+
+1. ve a CoreservicesVnet > subredes , selcion la creada anteriormente y en tablas de ruta selecionas rt-CoreServices
+2. Pulsa en **Guardar**
+
+<img width="821" height="1181" alt="image" src="https://github.com/user-attachments/assets/18c60b9e-89dd-4bb8-bca4-a0a68a35f800" />
+
+---
+
+### 🧠 Explicación
+
+✔️ Las **tablas de rutas personalizadas (UDR)** permiten controlar el tráfico de red  
+✔️ En este caso, el tráfico hacia `10.0.0.0/16` se redirige a un **Virtual Appliance**  
+✔️ Esto se usa comúnmente para:
+
+- Firewalls  
+- NVA (Network Virtual Appliances)  
+- Inspección de tráfico  
+
+➡️ Ahora el tráfico sigue una ruta definida manualmente en lugar de la predeterminada
