@@ -30,8 +30,8 @@ Se implementa:
 
 | Tarea | Descripción |
 |------|------------|
-| Tarea 1 | Crear VM en Red Core |
-| Tarea 2 | Crear VM en rojo Fabricación |
+| Tarea 1 | Crear VM en una Red Virtual |
+| Tarea 2 | Crear VM en otra Red Virtual |
 | Tarea 3 | Probar conectividad con Network Watcher |
 | Tarea 4 | Configuración de peering entre VNets |
 | Tarea 5 | Probar conectividad con PowerShell |
@@ -123,6 +123,10 @@ Pulsa:
 
 Revisar + crear → Crear
 <img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/1f51c892-bf6d-4670-adc1-65e954a3085c" />
+
+## Asi deberia quedar en la pestaña de revision:
+
+<img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/f3763cd5-63c7-40c0-bddd-2a53ea83c5da" />
 
 ---
 
