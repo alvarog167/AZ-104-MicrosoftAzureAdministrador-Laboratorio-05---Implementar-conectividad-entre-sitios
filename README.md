@@ -127,7 +127,8 @@ Revisar + crear → Crear
 
 ## Asi deberia quedar en la pestaña de revision:
 
-<img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/f3763cd5-63c7-40c0-bddd-2a53ea83c5da" />
+<img width="812" height="1255" alt="image" src="https://github.com/user-attachments/assets/32bfbdb1-f828-4936-9214-73ec8db7767a" />
+
 
 ---
 
