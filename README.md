@@ -314,3 +314,28 @@ El **VNet Peering** permite que dos redes virtuales se comuniquen como si estuvi
 
 ✔️ Ahora las máquinas virtuales podrán conectarse entre sí  
 ✔️ La comunicación es privada y dentro de la red de Azure  
+
+
+---
+
+## 🔹 Tarea 5: Probar conexión con PowerShell
+
+Ahora vas a comprobar que la conectividad funciona después del peering.
+
+### 🧾 Paso 1: Obtener la IP privada
+
+1. Ve a **CoreServicesVM**  
+2. Copia la **IP privada** de la máquina virtual  
+
+---
+
+### 💻 Paso 2: Ejecutar prueba desde ManufacturingVM
+
+1. Ve a **ManufacturingVM**  
+2. Entra en **Operaciones > Ejecutar Comando**  
+3. Ejecuta el siguiente comando:
+
+*powershell*
+Test-NetConnection <IP_PRIVADA> -Port 3389
+
+<img width="1648" height="1220" alt="image" src="https://github.com/user-attachments/assets/9a18a570-d85b-4e6b-a417-51354a49bc1d" />
