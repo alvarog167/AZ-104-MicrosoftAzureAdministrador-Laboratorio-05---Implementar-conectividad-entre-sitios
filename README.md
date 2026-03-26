@@ -49,7 +49,7 @@ https://portal.azure.com
 
 Inicio sesión con tu cuenta.
 
-<img widthSubiendo imagen.png…![ alta="1078" alt="imagen" src="https://github.com/user-attachments/assets/07430063-341a-424c-826c-6d5a56c0c86d" />
+<img widt alta="1078" alt="imagen" src="https://github.com/user-attachments/assets/07430063-341a-424c-826c-6d5a56c0c86d" />
 
 ---
 
