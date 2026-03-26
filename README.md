@@ -1,4 +1,4 @@
-<img ancho="994" alta="1219" alt="imagen" src="https://github.com/user-attachments/assets/4f5d6918-4de3-4e3f-8d21-aba7d9f9ca35" /><img ancho="844" alta="1244" alt="imagen" src="https://github.com/user-attachments/assets/82f01e46-10bc-49b4-8bfb-a0bc17b1700d" /># AZ-104 - Laboratorio 05: Implementar conectividad entre sitios
+# AZ-104 - Laboratorio 05: Implementar conectividad entre sitios
 
 ## 📌 Descripción
 
@@ -73,7 +73,7 @@ Vas a crear la VM de servicios centrales.
 - **Contraseña:** (una contraseña completa) 
 - **Puertos públicos entrantes:** Ninguno 
 
-![Subiendo imagen.png…]()
+<img ancho="844" alta="1244" alt="imagen" src="https://github.com/user-attachments/assets/82f01e46-10bc-49b4-8bfb-a0bc17b1700d" />
 
 
 Pulsa **Siguiente: Discotecas**
@@ -84,7 +84,7 @@ Pulsa **Siguiente: Discotecas**
 
 - Deja la configuración por defecto
 
-![Subiendo imagen.png…]()
+<img ancho="994" alta="1219" alt="imagen" src="https://github.com/user-attachments/assets/4f5d6918-4de3-4e3f-8d21-aba7d9f9ca35" />
 
 - Pulsa **Siguiente: Redes**
 
