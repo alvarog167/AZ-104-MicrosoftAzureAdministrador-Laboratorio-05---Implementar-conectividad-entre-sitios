@@ -77,11 +77,11 @@ Vas a crear la VM de servicios centrales.
 
 
 
-Pulsa **Siguiente: Discotecas**
+Pulsa **Siguiente: Discos**
 
 ---
 
-### 💽 Pestaña *Discotecas*
+### 💽 Pestaña *Discos*
 
 - Deja la configuración por defecto
 
@@ -93,23 +93,27 @@ Pulsa **Siguiente: Discotecas**
 
 ### 🌐 Pestaña *Redes*
 
-En **Rojo virtual**, pulsa **Crear nuevo** y configuración:
+En **Red Virtual**, pulsa **Crear nuevo** y configuración:
 
-- **Nombre:** Servicios básicosVnet 
+- **Nombre:** CoreServicesVnet 
 - **Rango de direcciones:** 10.0.0.0/16 
 
 #### Subred:
 
-- **Nombre de la subred:** Núcleo 
+- **Nombre de la subred:** Core
 - **Rango de direcciones de subred:** 10.0.0.0/24 
 
 Pulsa **OK**
 
+<img width="3382" height="1251" alt="image" src="https://github.com/user-attachments/assets/f1f71442-7e6d-4d34-a34a-b4b4eb4c1771" />
+
 ---
 
-### 📊 Pestaña *Monitoreo*
+### 📊 Pestaña *Supervision*
 
-- **Diagnóstico de arreglo:** Deshabilitar 
+- **Diagnósticos de arranque:** Deshabilitar
+  
+<img width="1046" height="1253" alt="image" src="https://github.com/user-attachments/assets/dbcbe439-711f-47a8-8c78-a82ee27e469a" />
 
 ---
 
@@ -118,6 +122,7 @@ Pulsa **OK**
 Pulsa:
 
 Revisar + crear → Crear
+<img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/1f51c892-bf6d-4670-adc1-65e954a3085c" />
 
 ---
 
