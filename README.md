@@ -63,7 +63,7 @@ Vas a crear la VM de servicios centrales.
 ### 🧾 Configuración - Pestaña *Conceptos básicos*
 
 - **Grupo de recursos:** az104-rg5 
-- **Nombre de la mañana virtual:** Servicios básicosVM 
+- **Nombre de la mañana virtual:** CoreServicesVM
 - **Región:** La que te permita tu subcirpcion 
 - **Opțiuni de disponibilidad:** No se requiere redundancia de infraestructura 
 - **Tipo de seguridad:** Estándar 
@@ -132,9 +132,77 @@ Revisar + crear → Crear
 
 ---
 
-## 📌 Próximos pasos
 
-- Crear la VM de Manufactura 
-- Configurar el peering de VNet 
-- Probar conectividad entre máquinas 
-- Implementar rutas personalizadas 
+## 🔹 Paso 2: Crear La segunda Maquina virtual
+
+### 🧾 Configuración - Pestaña *Conceptos básicos*
+
+- **Grupo de recursos:** az104-rg5 
+- **Nombre de la mañana virtual:** ManufacturingVM
+- **Región:** Distinta region a la primer amaquina virtual 
+- **Opțiuni de disponibilidad:** No se requiere redundancia de infraestructura 
+- **Tipo de seguridad:** Estándar 
+- **Imagen:** Centro de datos de Windows Server 2025: x64 Gen2 
+- **Tamaño:** Standard_B2ats_v2 
+- **Nombre de usuario:** administrador
+- **Contraseña:** (una contraseña completa) 
+- **Puertos públicos entrantes:** Ninguno 
+
+<img width="736" height="1206" alt="image" src="https://github.com/user-attachments/assets/b86dbaf4-2982-4fb8-a489-593863529789" />
+
+Pulsa **Siguiente: Discos**
+
+### 💽 Pestaña *Discos*
+
+- Deja la configuración por defecto
+
+<img width="890" height="1184" alt="image" src="https://github.com/user-attachments/assets/2a3fa474-40f6-41c1-b60a-274b4996b844" />
+
+- Pulsa **Siguiente: Redes**
+
+---
+
+### 🌐 Pestaña *Redes*
+
+En **Red Virtual**, pulsa **Crear nuevo** y configuración:
+
+- **Nombre:** ManufacturingVnet 
+- **Rango de direcciones:** 172.16.0.0/16 
+
+#### Subred:
+
+- **Nombre de la subred:** Manufacturing
+- **Rango de direcciones de subred:** 172.16.0.0/24 
+
+Pulsa **OK**
+
+<img width="3377" height="1239" alt="image" src="https://github.com/user-attachments/assets/2ed2a5db-d655-4c96-897d-47407cd060bc" />
+
+
+---
+
+### 📊 Pestaña *Supervision*
+
+- **Diagnósticos de arranque:** Deshabilitar
+  
+<img width="1046" height="1253" alt="image" src="https://github.com/user-attachments/assets/dbcbe439-711f-47a8-8c78-a82ee27e469a" />
+
+---
+
+### ✅ Finalizar
+
+Pulsa:
+
+Revisar + crear → Crear
+
+<img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/1f51c892-bf6d-4670-adc1-65e954a3085c" />
+
+## Asi deberia quedar en la pestaña de revision:
+
+<img width="943" height="1228" alt="image" src="https://github.com/user-attachments/assets/6a808a6b-6132-4b7e-8364-9bafcc7ee5b0" />
+
+
+
+---
+
+
