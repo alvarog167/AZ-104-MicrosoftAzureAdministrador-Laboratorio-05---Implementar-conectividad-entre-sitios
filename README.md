@@ -206,3 +206,49 @@ Revisar + crear → Crear
 ---
 
 
+## 🔹 Tarea 3: Usar Network Watcher para probar la conexión
+
+⚠️ **Asegúrate de que ambas máquinas virtuales estén desplegadas antes de continuar**
+
+1. Busca **Network Watcher** en el portal de Azure  
+2. Entra en **Connection troubleshoot**
+
+<img width="1641" height="1227" alt="image" src="https://github.com/user-attachments/assets/b7241e0d-6f84-4f1b-b75e-163cb2e799f7" />
+
+
+### ⚙️ Configuración
+
+Configura los siguientes parámetros:
+
+- **Tipo de Origen:** Maquina virtual 
+- **Virtual machine:** CoreServicesVM  
+- **Destino:** ManufacturingVM  
+- **Virtual machine:** ManufacturingVM  
+- **version de IP preferida:** Ambos  
+- **Protocolo:** TCP  
+- **Puerto de Destino:** 3389  
+- **Source port:** (vacío)  
+- **Diagnostic tests:** Deja el que esta por defecto 
+
+Pulsa **Run diagnostic tests**
+
+<img width="1661" height="1246" alt="image" src="https://github.com/user-attachments/assets/bb54c36c-e1bc-4ddb-bd1a-0ecad7de16dc" />
+
+
+---
+
+### 📊 Resultado esperado
+
+- ❌ **Unreachable**
+
+---
+
+### 🧠 Explicación
+
+✔️ Este resultado es correcto porque:
+
+- Las máquinas están en **redes virtuales diferentes**  
+- **No existe aún peering entre VNets**  
+- No hay conectividad configurada entre ellas  
+
+➡️ En la siguiente tarea se configurará el **VNet Peering** para permitir la comunicación.
