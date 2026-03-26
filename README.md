@@ -64,16 +64,17 @@ Vas a crear la VM de servicios centrales.
 
 - **Grupo de recursos:** az104-rg5 
 - **Nombre de la mañana virtual:** Servicios básicosVM 
-- **Región:** Este de Estados Unidos 
+- **Región:** La que te permita tu subcirpcion 
 - **Opțiuni de disponibilidad:** No se requiere redundancia de infraestructura 
 - **Tipo de seguridad:** Estándar 
 - **Imagen:** Centro de datos de Windows Server 2025: x64 Gen2 
-- **Tamaño:** Estandar_D2s_v3 
-- **Nombre de usuario:** administrador local 
+- **Tamaño:** Standard_B2ats_v2 
+- **Nombre de usuario:** admin 
 - **Contraseña:** (una contraseña completa) 
 - **Puertos públicos entrantes:** Ninguno 
 
-<img ancho="844" alta="1244" alt="imagen" src="https://github.com/user-attachments/assets/82f01e46-10bc-49b4-8bfb-a0bc17b1700d" />
+<img width="617" height="1213" alt="image" src="https://github.com/user-attachments/assets/ff23fa23-80ba-4bdc-bae2-3f4de357ddf1" />
+
 
 
 Pulsa **Siguiente: Discotecas**
