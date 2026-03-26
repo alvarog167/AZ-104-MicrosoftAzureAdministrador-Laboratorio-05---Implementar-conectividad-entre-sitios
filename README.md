@@ -122,6 +122,7 @@ Pulsa **OK**
 Pulsa:
 
 Revisar + crear → Crear
+
 <img width="771" height="127" alt="image" src="https://github.com/user-attachments/assets/1f51c892-bf6d-4670-adc1-65e954a3085c" />
 
 ## Asi deberia quedar en la pestaña de revision:
