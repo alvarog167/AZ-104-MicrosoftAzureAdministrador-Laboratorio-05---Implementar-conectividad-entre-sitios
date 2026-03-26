@@ -1,19 +1,20 @@
-# AZ-104 - Laboratorio 05: Implementar conectividad entre sitios
+<img ancho="1169" alta="469" alt="imagen" src="https://github.com/user-attachments/assets/1baa83ca-109c-4a0f-a30d-55e9fb954cc7" /># AZ-104 - Laboratorio 05: Implementar conectividad entre sitios
 
 ## 📌 Descripción
 
 En este laboratorio se explora la comunicación entre redes virtuales en Azure.  
 Se implementa:
 
-- Peering de redes virtuales  
-- Pruebas de conectividad entre máquinas virtuales  
-- Creación de rutas personalizadas  
+- Peering de redes virtuales 
+- Pruebas de conectividad entre máquinas virtuales 
+- Creación de rutas personalizadas 
 
 ---
 
 ## 🏗️ Diagrama de arquitectura
 
-![Diagrama de arquitectura](./arquitectura.png)
+![Subiendo imagen.png…]()
+
 
 > 📍 Nota: Añade la imagen al repositorio con el nombre `arquitectura.png`.
 
