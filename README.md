@@ -241,6 +241,9 @@ Pulsa **Run diagnostic tests**
 
 - ❌ **Unreachable**
 
+<img width="1134" height="461" alt="image" src="https://github.com/user-attachments/assets/844d3f2d-4eab-4c58-a517-61574f82ac6a" />
+
+
 ---
 
 ### 🧠 Explicación
@@ -252,3 +255,62 @@ Pulsa **Run diagnostic tests**
 - No hay conectividad configurada entre ellas  
 
 ➡️ En la siguiente tarea se configurará el **VNet Peering** para permitir la comunicación.
+
+---
+
+## 🔹 Tarea 4: Configurar peering entre redes virtuales
+
+1. Entra en **CoreServicesVnet**  
+2. Ve a la sección **Emparejaminetos**  
+3. Pulsa en **+ Agregar**
+
+<img width="1645" height="1166" alt="image" src="https://github.com/user-attachments/assets/73a1b6da-4354-49a0-8694-1cab0c0c5478" />
+
+
+### ⚙️ Configuración
+
+Configura los siguientes parámetros:
+
+#### 🔗 Resumen de la red virtual remota
+
+- **Nombre del Emparejamiento:** ManufacturingVnet-to-CoreServicesVnet
+- **Tipo de Emparejamiento:** Red Virtual 
+- **Virtual network:** ManufacturingVnet  
+- **Permitir 'ManufacturingVnet' para acceder a 'CoreServicesVnet:** seleccionado  
+- **Permitir 'ManufacturingVnet' para recibir el tráfico reenviado desde 'CoreServicesVnet:** seleccionado  
+
+---
+
+#### 🔗 Resumen de la red virtual local
+- **Nombre del Emparejamiento:** ManufacturingVnet-to-CoreServicesVnet
+- **Tipo de Emparejamiento:** Red Virtual 
+- **Red Virtual:** ManufacturingVnet  
+- **Permitir 'CoreServicesVnet' para acceder a 'ManufacturingVne:** seleccionado  
+- **Permitir 'CoreServicesVnet' para recibir el tráfico reenviado desde 'ManufacturingVnet:** seleccionado  
+---
+
+Pulsa **Agregar**
+###Asi deberia quedar la Configuracion:
+
+<img width="1185" height="1191" alt="image" src="https://github.com/user-attachments/assets/6e1a0fd9-c027-4a13-b174-e75d7bdafabe" />
+
+---
+
+### 📊 Verificación
+
+Comprueba en ambas redes virtuales:
+
+Para ello vualve a hacer la parte 3. Aqui te deberia salir que si hay conexion
+
+- ✔️ **Estado:** Conectado  
+
+<img width="1044" height="393" alt="image" src="https://github.com/user-attachments/assets/124133a9-2bb9-4168-839d-b62e59c9897a" />
+
+---
+
+### 🧠 Explicación
+
+El **VNet Peering** permite que dos redes virtuales se comuniquen como si estuvieran en la misma red.
+
+✔️ Ahora las máquinas virtuales podrán conectarse entre sí  
+✔️ La comunicación es privada y dentro de la red de Azure  
